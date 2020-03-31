@@ -82,6 +82,17 @@ function get_input() {
 // 搜索
 function search() {
     let element = document.getElementById('search');
+    // 键盘回车
+    document.onkeydown = (event) => {
+        if (event.keyCode === 13) {
+            if (get_input() === false) {
+                window.alert("请输入内容");
+                return false;
+            }
+            redirect(type, get_input());
+        }
+    };
+    // 点击搜索
     element.addEventListener('click', function () {
         if (get_input() === false) {
             window.alert("请输入内容");
@@ -90,7 +101,6 @@ function search() {
          redirect(type,get_input())
     })
 }
-
 
 // 跳转
 function redirect(id,content) {
