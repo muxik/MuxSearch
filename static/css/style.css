@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.body_box {
+    position: relative;
+    top:200px;
+    left: 0px;
+    width: auto;
+}
+
+.body_box .search{
+    float: right;
+}
+
+.body_box .search,
+.body_box .search input
+{
+    border: 2px solid #2f3542;
+    border-radius: 10px;
+    width: 528px;
+    height: 45px;
+}
+
+.body_box .search input {
+    border: none;
+    height: 43px;
+    width: 483px;
+    float: left;
+    outline: none;
+    font-size: 32px;
+    font-family: "IBM Plex Mono Text", serif;
+    color: #70a1ff;
+    margin-left: 2px;
+}
+
+.body_box .search img {
+    line-height: 53px;
+    margin-top: 2px;
+    margin-right: 3px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.body_box .logo{
+    float: left;
+    position: relative;
+    left: -260px;
+    top: 43px;
+
+}
+.logo span span {
+    font-size: 30px;
+}
+
+.logo span a {
+    font-size:33px;
+    font-family: "IBM Plex Mono Light",serif;
+    text-decoration: none;
+    color: #5352ed;
+}
