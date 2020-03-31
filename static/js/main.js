@@ -85,28 +85,16 @@ function search() {
     element.addEventListener('click', function () {
         if (get_input() === false) {
             window.alert("请输入内容");
-            return;
+            return false;
         }
-        switch (type) {
-            case '0':
-                window.open(link[0]+get_input() ,'_blank');
-                break;
-            case '1':
-                window.open(link[1]+get_input() ,'_blank');
-                break;
-            case '2':
-                window.open(link[2]+get_input() ,'_blank');
-                break;
-            case '3':
-                window.open(link[3]+get_input() ,'_blank');
-                break;
-            default:
-                console.error("Error: not link");
-        }
+         redirect(type,get_input())
     })
 }
 
 
-function redirt() {
-
+// 跳转
+function redirect(id,content) {
+    let url = link[id] + content;
+    window.open(url,'_blank');
+    return url;
 }
