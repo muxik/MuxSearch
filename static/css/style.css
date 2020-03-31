@@ -1,6 +1,10 @@
 * {
     padding: 0;
     margin: 0;
+
+}
+body {
+    background: url("../img/雨天.jpg") no-repeat left top;
 }
 
 .container {
@@ -18,15 +22,17 @@
 
 .body_box .search{
     float: right;
+    background: #fff;
 }
 
 .body_box .search,
 .body_box .search input
 {
-    border: 2px solid #2f3542;
+    border: 2px solid #fff;
     border-radius: 10px;
     width: 528px;
     height: 45px;
+    background: rgba(0,0,0,0.2)
 }
 
 .body_box .search input {
@@ -37,7 +43,7 @@
     outline: none;
     font-size: 32px;
     font-family: "IBM Plex Mono Text", serif;
-    color: #70a1ff;
+    color: #ff6b81;
     margin-left: 2px;
 }
 
@@ -74,7 +80,7 @@
 }
 
 .menu .item {
-    color: #2f3542;
+    color: #fff;
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
@@ -88,4 +94,22 @@
     border-radius: 5px;
     height: 30px;
     background-color: #70a1ff;
+}
+
+.datetime time {
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top: 80px;
+    font-family: "IBM Plex Mono Light",serif;
+    display: block;
+}
+
+.datetime .desc {
+    position: relative;
+    font-family: 文泉驿微米黑,serif;
+    color: white;
+    top: 100px;
+    left: 30%;
+    font-size: 20px;
 }
