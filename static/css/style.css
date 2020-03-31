@@ -52,7 +52,7 @@
 .body_box .logo{
     float: left;
     position: relative;
-    left: -260px;
+    left: -265px;
     top: 43px;
 
 }
@@ -65,4 +65,26 @@
     font-family: "IBM Plex Mono Light",serif;
     text-decoration: none;
     color: #5352ed;
+}
+
+.body_box .menu {
+    position: relative;
+    left: -120px;
+    top: 20px;
+}
+
+.menu .item {
+    color: #2f3542;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.menu .active{
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #70a1ff;
 }
