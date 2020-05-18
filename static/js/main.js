@@ -14,6 +14,14 @@ let link = [
 ];
 
 window.onload = function () {
+    // 自动获取焦点
+    setTimeout(function() {
+       try {
+           document.getElementById('input').focus();
+        }catch(e) {}
+    });
+
+
     menu_active();
     page_time();
     search();
